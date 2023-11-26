@@ -1,0 +1,28 @@
+<div class="h-screen flex bg-black font-nintendo flex-col">
+	<p class="text-white text-3xl m-4">
+		Press (Enter) to boot menu. ( {{ countTime }} )
+	</p>
+	<p class="text-green-400 text-2xl mt-4" *ngIf="showBootText">
+		Booting from CD-Rom...
+	</p>
+	<p class="text-white text-2xl mb-2" *ngIf="showBootText">
+		95 MB medium detected
+	</p>
+	<p class="text-white text-1xl" *ngIf="showBootText">
+		[ 0.000000] BIOS: Probing system memory <br />
+		[BIOS details] [ 0.001234] BIOS: ACPI 2.0 present <br />
+		[ 0.002345] ACPI: RSDP 000F0530, 0024 (r2 BOCHS )<br />
+		[ 0.003456] ACPI: XSDT 000F05A0, 005C (r1 BOCHS BXPCRSDT 00000001 BXPC
+		00000001) <br />[ 0.004567] ACPI: FACP 000F05F0, 00F4 (r4 BOCHS BXPCFACP
+		00000001 BXPC 00000001) <br />[ 0.005678] ACPI: DSDT 000F0730, 1359 (r2
+		BOCHS BXPCDSDT 00000001 BXPC 00000001) <br />[ 0.006789] ACPI: FACS
+		000F0000, 0040 [ 0.007890] ACPI: APIC 000F06F0, 0072 (r1 BOCHS BXPCAPIC
+		00000001 BXPC 00000001) [ 0.008901] BIOS: RSDP 0xF0530 0x00024 (v02
+		BOCHS ) [ 0.009912] BIOS: XSDT 0xF05A0 0x005C (v01 BOCHS BXPCRSDT
+		00000001 BXPC 00000001) [ 0.010923] BIOS: FACP 0xF05F0 0x00F4 (v04 BOCHS
+		BXPCFACP 00000001 BXPC 00000001) [ 0.011934] BIOS: DSDT 0xF0730 0x1359
+		(v02 BOCHS BXPCDSDT 00000001 BXPC 00000001) [ 0.012945] BIOS: FACS
+		0xF0000 0x0040 [ 0.013956] BIOS: APIC 0xF06F0 0x0072 (v01 BOCHS BXPCAPIC
+		00000001 BXPC 00000001) [ 0.014967] BIOS: [Memory details]
+	</p>
+</div>
