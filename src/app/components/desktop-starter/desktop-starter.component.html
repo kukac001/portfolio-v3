@@ -1,0 +1,33 @@
+<div class="h-screen flex bg-black font-nintendo flex-col">
+	<p class="text-white text-3xl m-4">
+		Press (Enter or click on Website) to boot menu. (
+		{{ countTimeDesktop }} )
+	</p>
+	<div *ngIf="showBootText">
+		<p class="text-green-400 text-2xl mt-4 ml-4">
+			Booting from CD-Rom... [SUCCESS]
+		</p>
+		<div *ngIf="countTimeBoot <= 3">
+			<p class="text-purple-400 text-2xl mb-5">95 MB medium detected</p>
+			<p class="text-purple-400 text-1xl">BIOS: Probing system memory</p>
+		</div>
+		<div *ngIf="countTimeBoot <= 2">
+			<p class="text-orange-200 text-1xl ml-4">
+				Booting GRUB 2.04...
+				<span class="text-green-400">[SUCCESS]</span><br />
+				Loading Linux kernel...
+				<span class="text-green-400">[SUCCESS]</span>
+			</p>
+			<p class="text-purple-400 text-1xl">
+				Linux version 5.10.0-xyz-generic <br />
+				Initializing CPU #0
+			</p>
+		</div>
+		<div>
+			<p class="text-orange-200 text-1xl ml-4" *ngIf="countTimeBoot <= 1">
+				Detected 8 processors...
+				<span class="text-green-400">[SUCCESS]</span>
+			</p>
+		</div>
+	</div>
+</div>
