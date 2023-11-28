@@ -3,12 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DesktopStarterComponent } from './components/desktop-starter/desktop-starter.component';
-import { DesktopComponent } from './components/desktop/desktop/desktop.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
-	declarations: [AppComponent, DesktopComponent],
-	imports: [BrowserModule, AppRoutingModule, DesktopStarterComponent],
+	declarations: [AppComponent],
+	imports: [BrowserModule, AppRoutingModule],
 	providers: [],
 	bootstrap: [AppComponent],
 })
